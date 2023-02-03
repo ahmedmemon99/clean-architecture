@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607520295715",
+    "project_id": "auth-with-architecture",
+    "storage_bucket": "auth-with-architecture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607520295715:android:8c91ddbba83fd08d545a96",
+        "android_client_info": {
+          "package_name": "com.example.mvvm_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607520295715-eulld4l52ialtn2m163o4ih27mcvu9jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvN42IpsbiC6x_DyUfq8e8ThfOeFFuGXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607520295715-eulld4l52ialtn2m163o4ih27mcvu9jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
