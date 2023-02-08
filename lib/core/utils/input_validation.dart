@@ -25,21 +25,19 @@ class AppInputValidation{
         if(val.length < 8){
           return 'password must need 8 characters';
         }
-        return null;
+          return null;
      }
 
-   static String? validateConfirmPassword(String oldPwd,String? val){
-
+   static String? validateConfirmPassword(String? val,String? pwd){
        if(val!.isEmpty){
-         return 'password required';
+          return 'Confirm password required';
        }
        if(val.length < 8){
-         return 'password must need 8 characters';
+          return 'password must need 8 characters';
+       }else if(val != pwd){
+          return 'Confirm password not match';
        }
-       if(val != oldPwd){
-         return 'Confirm password not match';
-       }
-        return null;
+         return null;
    }
 
 

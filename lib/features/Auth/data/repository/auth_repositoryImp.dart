@@ -13,19 +13,14 @@ class AuthRepositoryImp extends AuthRepository{
 
   @override
   Future<User> createUser(String email, String password)async{
-    try {
-      final result = await authRemoteSource.signupMethod(email, password);
-      return result!.toEntity();
-    }on SocketException{
-        print('ff');
-    }
-    throw Exception('ff');
+        final result = await authRemoteSource.signupMethod(email, password);
+        return result!.toEntity();
   }
 
   @override
-  Future<User> loginUser(String email, String password) {
-    // TODO: implement loginUser
-    throw UnimplementedError();
+  Future<User> loginUser(String email, String password) async{
+       final result = await authRemoteSource.loginMethod(email, password);
+       return result!.toEntity();
   }
 
 }

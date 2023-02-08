@@ -6,3 +6,14 @@ extension EmailValidator on String {
         .hasMatch(this);
   }
 }
+
+extension PassowordMatch on String{
+  bool isMatch(String password){
+    if(this == password){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+}

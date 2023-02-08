@@ -14,14 +14,12 @@ class UserModel extends Equatable {
     return UserModel(
                     id: json['localId'],
                     email: json['email'],
-                    expires: DateTime.parse(json['expiresIn'])
+                    expires: DateTime.now().add(Duration(seconds: int.parse(json['expiresIn'])))
                   );
-          }
+             }
 
   @override
   List<Object?> get props => [id, email, expires];
-
-
     User toEntity(){
       return User(
         id: id,
